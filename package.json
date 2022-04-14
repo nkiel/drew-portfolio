@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b page-build -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,7 +27,7 @@
       "react-app/jest"
     ]
   },
-  "homepage" : "https://nkiel.github.io/drew-portfolio",
+  "homepage" : "https://nkiel.github.io/drew-portfolio/",
   "browserslist": {
     "production": [
       ">0.2%",
