@@ -1,5 +1,6 @@
 nav {
   text-align: center;
+  z-index: 1;
 }
 nav a {
   text-decoration: none;
@@ -33,4 +34,7 @@ nav * {
 nav li {
   padding: 0.5em 1em;
   list-style-type: none;
+}
+
+#nav-list {
 }

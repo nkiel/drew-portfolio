@@ -1,10 +1,18 @@
 #portfolio-wrapper {
   display: flex;
   flex-direction: column;
+  z-index: inherit;
 }
 
 /* portfolio Wall or hanging pics */
-#portfolio-view-wrapper {
+#portfolio-view-wrapper {}
+
+.above-animations {
+  z-index: 1;
+}
+
+.solid-bg {
+  background-color: var(--bg-color);
 }
 
 #projects {
@@ -18,6 +26,7 @@
   justify-content: space-around;
   list-style-type: none;
 }
+
 .project {
   flex: 1 1 0pt;
   height: fit-content;
@@ -27,8 +36,9 @@
   grid-template:
     "icon"
     "icon"
-    "name" auto;
+    "name"auto;
 }
+
 .project:hover {
   cursor: pointer;
 }
@@ -57,16 +67,79 @@
 
 /* portfolio Display or content of projects */
 #portfolio-display-wrapper {
-  display:flex;
+  display: flex;
   flex-flow: column nowrap;
 }
+
 #portfolio-display-wrapper * {
   display: block;
 }
 
-#portfolio-content {
-  transition: height 5s ease 0s;
+.animated-content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+.animated-content * {
+  max-width: auto;
+}
+
+.animated-content[hidden] {
+  display: none;
+}
+
+.animated-content .project-title {
+  text-align: left;
+}
+
+.animated-content .project-subtitle {
+  text-align: right;
+  padding-left: 25%;
+}
+
+.close-portfolio-btn {
+  width: fit-content;
+  align-self: center;
+}
+.close-portfolio-btn:hover {
+  cursor: pointer;
+}
+
+
+#animated-container {
+  /* animation-duration: var(--page-change-duration) */
+  /* display: none; */
+  height: 0;
+  /* transition: height var(--page-change-duration) linear; */
+}
+
+#animated-container.content {
+  /* animation-duration: var(--page-change-duration) */
+  /* display: inline; */
+  /* max-height: auto; */
+  /* animation-duration: calc(var(--page-change-duration)/2);
+  animation-name: portfolio-bg-down;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out; */
+  /* animation:  ) 1; */
+  /* height: auto; */
+  height: auto;
+  transition: height var(--page-change-duration) linear;
+}
+
+@keyframes portfolio-bg-down {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: auto;
+  }
+}
+
 
 #portfolio-content * {
   color: var(--fnt-color);

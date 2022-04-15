@@ -1,0 +1,94 @@
+.aspen-tweet-container {
+    display: inline-grid;
+    width: 100%;
+    height: calc(100% * 1.5);
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: .2em;
+}
+
+.aspen-tweet-container img {
+    height: auto;
+}
+
+.cal-container {
+    display: inline-grid;
+    padding: .5em;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.cal-container .cal {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 4;
+}
+
+.cal-container .desc {
+    grid-row: 2 / span 1;
+}
+
+.smash-tweet-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.smash-tweet-container h1 {
+    font-size-adjust: .3;
+}
+
+.smash-tweet-container img {
+    width: 50%;
+    /* align-self:; */
+}
+
+.smash-tweet-container hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: transparent;
+    border-top: 4px dotted var(--surface-color);
+    
+}
+
+.mntn-cal-container {
+    display: inline-grid;
+
+}
+
+.mntn-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+    gap: 2em;
+}
+
+.mntn-social-container img {
+    width:70%;
+}
+
+.mntn-social-container img:nth-child(even) {
+    align-self: start;
+}
+.mntn-social-container img:nth-child(odd) {
+    align-self: end;
+}
+
+.sips-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+    gap: 2em;
+}
+.sips-img-container img {
+    width:90%;
+}
+
+.sips-img-container img:nth-child(even) {
+    align-self: end;
+}
+.sips-img-container img:nth-child(odd) {
+    align-self: start;
+}

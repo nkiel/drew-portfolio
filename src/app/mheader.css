@@ -10,8 +10,8 @@
   );
 }
 
-
 #logo-wrapper {
+  height: 200px;
   grid-area: logo;
   display: flex;
   justify-content: center;

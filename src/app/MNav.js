@@ -24,7 +24,7 @@ class MNav extends React.Component {
                     ))}
         */
         return (
-            <nav id="site-nav-wrapper">
+            <nav id="site-nav-wrapper" className='solid-bg'>
 				<ul id="nav-list" style={{'--nav-cnt': this.navList.length}}>
                     {this.navList.map((item, index) => (
                         <li key={index}><Link to={item.link}>{item.text}</Link></li>

@@ -15,10 +15,10 @@ class ProjectSelect extends React.Component {
 		}
 		console.log(`grid-template: "${(25.0 / projectCnt) + 'vw'}" auto`) //style={`grid-template: "${template}" auto`}
         return (
-            <div id="portfolio-view-wrapper">
+            <div id="portfolio-view-wrapper" className='above-animations solid-bg'>
 				<ul id="projects"  style={{ '--project-cnt' : projectCnt }}>
                     {this.props.items.map((item, index) => (item.icon || item.name) ? (
-                        <li className="project" key={index} onClick={() => this.props.updateContent(index)}>
+                        <li className="project" key={'select'+index} onClick={() => this.props.updateContent(index)}>
                             <img className="project-icon" src={item.icon} />
                             {/* <p className='project-name' style={{ fontSize : (.7 * (25.0 / projectCnt)) + 'vw'}}>{item.name}</p> */}
                             <p className='project-name title-font'>{item.name}</p>
