@@ -22,11 +22,11 @@ const PORT_ENUM = {
 
 const PORT_INFO = [
     { value: 'HOME' },
-    { value: 'BIRDHOUSE', component: <Birdhouse />, icon: '/res/projects/BIRDHOUSE.png', name: 'birdhouse' },
-    { value: 'ASPEN', component: <Aspen />, icon: '/res/projects/ASPEN.png', name: 'aspen' },
-    { value: 'SMASHPARK', component: <Smashpark />, icon: '/res/projects/SMASHPARK.png', name: 'smashpark' },
-    { value: 'MNTN', component: <Mntn />, icon: 'res/projects/MNTN.png', name: 'mntn' },
-    { value: 'SIP_STUDIOS', component: <SipStudios />, icon: 'res/projects/SIP_STUDIOS.png', name: 'sip studios' },
+    { value: 'BIRDHOUSE', component: <Birdhouse />, icon: '/drew-portfolio/res/projects/BIRDHOUSE.png', name: 'birdhouse' },
+    { value: 'ASPEN', component: <Aspen />, icon: '/drew-portfolio/res/projects/ASPEN.png', name: 'aspen' },
+    { value: 'SMASHPARK', component: <Smashpark />, icon: '/drew-portfolio/res/projects/SMASHPARK.png', name: 'smashpark' },
+    { value: 'MNTN', component: <Mntn />, icon: '/drew-portfolio/res/projects/MNTN.png', name: 'mntn' },
+    { value: 'SIP_STUDIOS', component: <SipStudios />, icon: '/drew-portfolio/res/projects/SIP_STUDIOS.png', name: 'sip studios' },
     // { value: 'BETA', component: <Beta />, icon: 'res/projects/BETA.png', name: 'beta' }
 ]
 

@@ -7,7 +7,7 @@ class MHeader extends React.Component {
         return (
             <header tabIndex="-1" id="site-header-wrapper">
                 <div id="logo-wrapper">
-                    <Link to="/"><img id="logo" src="res/drew_logo.png" /></Link>
+                    <Link to="/"><img id="logo" src="/drew-portfolio/res/drew_logo.png" /></Link>
                 </div>
             </header>
         );

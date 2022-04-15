@@ -28,9 +28,9 @@ class App extends React.Component {
           <MHeader />
           <MNav />
           <Routes>
-            <Route path="/" element={<Navigate replace to="/drew-portfolio" />} />
-            <Route path="/about" element={<Navigate replace to="/drew-portfolio/about" />} />
-            <Route path="/writing" element={<Navigate replace to="/drew-portfolio/writing" />} />
+            <Route path="/" element={<Navigate to="/drew-portfolio" />} />
+            <Route path="/about" element={<Navigate to="/drew-portfolio/about" />} />
+            <Route path="/writing" element={<Navigate to="/drew-portfolio/writing" />} />
             <Route path="/drew-portfolio" element={<MPortfolio />} />
             <Route path="/drew-portfolio/about" element={<MAbout />} />
             <Route path='/drew-portfolio/writing' element={<MWriting />} />

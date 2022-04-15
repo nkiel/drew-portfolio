@@ -9,7 +9,6 @@
 /coverage
 
 # production branch build to docs
-# /docs
 /build
 
 # misc
